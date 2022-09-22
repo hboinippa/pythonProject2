@@ -5,6 +5,7 @@ The primary goal of this file is to demonstrate a simple unittest implementation
 @author: jrr
 @author: rk
 """
+<<<<<<< HEAD
 import pytest
 from Triangle import classifyTriangle
 
@@ -17,6 +18,16 @@ class TestTriangles(unittest.TestCase):
     # define multiple sets of tests as functions with names that begin
     def testRightTriangleA(self):
         self.assertEqual(classifyTriangle(3, 4, 5), 'Right', '3,4,5 is a Right
+=======
+from main import classifyTriangle
+
+
+
+class TestTriangles(TestCase):
+    # define multiple sets of tests as functions with names that begin
+    def testRightTriangleA(self):
+        self.assertEqual(classifyTriangle(5, 5, 5), 'Right', '3,4,5 is a Right
+>>>>>>> 4edc82d (Initial commit)
         triangle
         ')
 
